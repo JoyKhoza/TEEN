@@ -1,0 +1,88 @@
+/* General Styling */
+body {
+    font-family: 'Pacifico', cursive;
+    background-image: url('https://source.unsplash.com/featured/?romance,hearts');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  /* Container Styling */
+  .container {
+    text-align: center;
+    border: 3px solid transparent;
+    padding: 20px;
+    border-radius: 15px;
+    background: linear-gradient(45deg, #ffe6f9, #ffe0ff);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Heading Styling */
+  h1 {
+    color: #ff0066;
+    text-shadow: 2px 2px 4px #ff99cc;
+  }
+  
+  /* Button Styling */
+  button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background: linear-gradient(45deg, #ff66a3, #ff3385);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+    animation: pulse 1.5s infinite;
+  }
+  
+  button:hover {
+    background: linear-gradient(45deg, #ff3385, #ff0066);
+  }
+  
+  /* Secret Message Styling */
+  #secretMessage {
+    margin-top: 15px;
+    font-size: 20px;
+    color: #ff0066;
+    font-style: italic;
+  }
+  
+  /* Button Animation */
+  @keyframes pulse {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+  }
+  
+  /* Floating Heart Styling */
+  .heart {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    color: #ff0066;
+    animation: floatUp 2s ease-out;
+  }
+  
+  @keyframes floatUp {
+    0% {
+      transform: translate(-50%, -50%) scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: translate(-50%, -200%) scale(1.5);
+      opacity: 0;
+    }
+  }
+  
